@@ -1,0 +1,40 @@
+GET http://localhost:3000/api/proyectos
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiRGFyZWsiLCJjcmVhdGVkQXQiOjE1OTY0MDc1NDUsImV4cGlyZWRBdCI6MTU5NjQwNzg0NX0.ohNgKGo1He9n5rEfmNMtErKiVvej_RJo3HjhIaHG68k
+
+###
+POST http://localhost:3000/api/proyectos
+content-type: application/json
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiRGFyZWsiLCJjcmVhdGVkQXQiOjE1OTY0OTY4MzYsImV4cGlyZWRBdCI6MTU5NjQ5NzEzNn0.X0hmsotg2bdaxxzfbduWpLvRbyqkzFHc6kjfSbWcFeQ
+
+{
+    "titulo": "Proyecto de Prueba",
+    "descripcion": "Test",
+    "url": "http://www.micvproject.com",
+    "cliente": "Carpe Diem",
+    "url_cliente":"http://www.carpediem.com"
+}
+
+###
+PUT http://localhost:3000/api/proyectos/5f0e5448f836407ab86dea5f
+Content-Type: application/json
+
+{
+    "titulo": "Proyecto EDITADO V2",
+    "descripcion": "Test kontrolny",
+    "url": "http://www.micvproject.com",
+    "cliente": "Carpe Diem",
+    "url_cliente":"http://www.carpediem.com"
+}
+
+###
+DELETE http://localhost:3000/api/proyectos/5f0fad48b97ab879807bc5b7
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiRGFyZWsiLCJjcmVhdGVkQXQiOjE1OTUwMjY3NzEsImV4cGlyZWRBdCI6MTU5NTAyNzA3MX0.dqjKSi6HsM1T8HpfJqY8EhGGKK_-rkztjTulhmXqfxk
+
+###
+GET http://localhost:3000/api/token
+
+### PRODUCCIÓN
+GET https://webcvback.herokuapp.com/api/proyectos
+
+###
+GET https://webcvback.herokuapp.com/api/token
